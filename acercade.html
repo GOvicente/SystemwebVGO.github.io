@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de la Ingeniería en Sistemas Computacionales</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            flex: 1;
+            text-align: center;
+            font-size: 30px;
+            color: #f1f1f1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #f0f0f0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin-bottom: 5px;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 988px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000107;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                width: 100%;            
+                padding: 10px 0;         
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ingeniería en Sistemas Computacionales</h1>
+        <nav><br>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contactos.html">Contáctanos</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li>
+                <li><a href="areas.html">Áreas de especialización</a></li>
+                <li><a href="plan.html">Plan de estudios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container"><center>
+
+        <h2>Acerca de la Carrera</h2>
+
+    </center>
+        <p>
+            La Ingeniería en Sistemas Computacionales es una disciplina que combina la ciencia, la tecnología y la ingeniería para diseñar, desarrollar y gestionar sistemas de software y hardware. Este campo se enfoca en la resolución de problemas complejos mediante la creación de soluciones tecnológicas innovadoras.
+        </p>
+        <p>
+            Los ingenieros en sistemas computacionales trabajan en una variedad de entornos, desde empresas de tecnología hasta instituciones financieras y gubernamentales. Su formación les permite enfrentar desafíos en áreas como el desarrollo de software, la gestión de bases de datos, la seguridad informática y la ingeniería de redes.
+        </p>
+        <p>
+            La carrera proporciona una sólida base en matemáticas, algoritmos y teoría de la computación, así como habilidades prácticas en programación, diseño de sistemas y análisis de datos. Los estudiantes aprenden a utilizar herramientas y tecnologías actuales, preparándolos para adaptarse a los cambios y avances en el campo.
+        </p>
+        <p>
+            Al graduarse, los profesionales en ingeniería en sistemas computacionales están capacitados para liderar proyectos tecnológicos, innovar en el desarrollo de soluciones y contribuir al avance de la tecnología en diversos sectores.
+        </p>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos de la Ingeniería en Sistemas Computacionales</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            flex: 1;
+            text-align: center;
+            font-size: 30px;
+            color: #f1f1f1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #f0f0f0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin-bottom: 5px;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 988px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000107;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                width: 100%;            
+                padding: 10px 0;         
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ingeniería en Sistemas Computacionales</h1>
+        <nav><br>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contactos.html">Contáctanos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="areas.html">Áreas de especialización</a></li>
+                <li><a href="plan.html">Plan de estudios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <center><h2>Objetivos de la Carrera</h2></center>
+        <ul>
+            <li><strong>Desarrollar Competencias Técnicas Avanzadas:</strong> Proveer a los estudiantes con un sólido conocimiento en las áreas fundamentales de la informática, incluyendo algoritmos, estructuras de datos, programación y sistemas operativos. Capacitar a los futuros ingenieros para diseñar, implementar y mantener sistemas de software complejos y eficientes.</li>
+            <br><li><strong>Fomentar la Capacidad de Innovación y Resolución de Problemas:</strong> Desarrollar habilidades para identificar, analizar y resolver problemas tecnológicos mediante el uso de técnicas innovadoras y enfoques creativos. Promover el pensamiento crítico y la capacidad de adaptar soluciones a los retos emergentes en el campo de la tecnología.</li>
+            <br><li><strong>Preparar para la Gestión de Proyectos Tecnológicos:</strong> Formar profesionales capaces de gestionar proyectos de tecnología, desde la planificación y ejecución hasta el monitoreo y evaluación de resultados. Proporcionar conocimientos en metodologías ágiles y tradicionales para la gestión efectiva de proyectos en diferentes entornos.</li>
+            <br><li><strong>Inculcar Principios de Ética y Responsabilidad Profesional:</strong> Enseñar la importancia de la ética en la práctica profesional y la responsabilidad en la creación y gestión de sistemas tecnológicos. Promover una actitud proactiva hacia la seguridad, privacidad y impacto social de las soluciones tecnológicas.</li>
+            <br><li><strong>Desarrollar Habilidades de Comunicación y Trabajo en Equipo:</strong> Mejorar las habilidades de comunicación para que los egresados puedan colaborar eficazmente con otros profesionales y con clientes en proyectos tecnológicos. Fomentar la capacidad de trabajar en equipos multidisciplinarios y de liderar proyectos con un enfoque colaborativo.</li>
+            <br><li><strong>Adaptar la Formación a los Avances Tecnológicos:</strong> Garantizar que los estudiantes estén al tanto de las últimas tendencias y avances en tecnología para mantenerse actualizados en un campo en constante evolución. Facilitar el aprendizaje continuo y la adaptación a nuevas tecnologías y herramientas emergentes.</li>
+            <br><li><strong>Impulsar la Investigación y el Desarrollo en Tecnología:</strong> Motivar a los estudiantes a participar en proyectos de investigación y desarrollo para contribuir al avance del conocimiento en el campo de la ingeniería en sistemas computacionales. Fomentar la creación de soluciones innovadoras y la aplicación de la investigación para resolver problemas reales en la industria.</li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

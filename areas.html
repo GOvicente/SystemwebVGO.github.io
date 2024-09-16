@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de la Ingeniería en Sistemas Computacionales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            flex: 1;
+            text-align: center;
+            font-size: 30px;
+            color: #f1f1f1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #f0f0f0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin-bottom: 5px;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 988px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000107;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                width: 100%;            
+                padding: 10px 0;         
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>        <h1>Ingeniería en Sistemas Computacionales</h1>
+        </center>
+        <nav><br>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contactos.html">Contáctanos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li>
+                <li><a href="plan.html">Plan de estudios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Áreas de Especialización</h2>
+        <p>La carrera de Ingeniería en Sistemas Computacionales ofrece una variedad de áreas de especialización para que los estudiantes puedan enfocarse en sus intereses y habilidades. A continuación, se presentan algunas de las principales áreas en las que los estudiantes pueden especializarse:</p>
+        <ul>
+            <li><strong>Desarrollo de Software:</strong> Enfocado en la creación de aplicaciones y sistemas de software. Incluye el aprendizaje de lenguajes de programación, desarrollo web, aplicaciones móviles y metodologías de desarrollo ágil.</li>
+            <br> <li><strong>Ingeniería de Datos:</strong> Especialización en la gestión, análisis y visualización de grandes volúmenes de datos. Incluye técnicas de minería de datos, bases de datos, y análisis estadístico para la toma de decisiones empresariales.</li>
+            <br><li><strong>Seguridad Informática:</strong> Centrado en la protección de sistemas y datos contra amenazas y ataques cibernéticos. Incluye aspectos como criptografía, análisis forense y estrategias de defensa en redes y aplicaciones.</li>
+            <br><li><strong>Inteligencia Artificial:</strong> Investigación y aplicación de técnicas que permiten a las máquinas realizar tareas que normalmente requieren inteligencia humana. Incluye aprendizaje automático, redes neuronales y procesamiento de lenguaje natural.</li>
+            <br><li><strong>Redes y Comunicaciones:</strong> Estudio de la infraestructura y tecnologías que permiten la comunicación entre sistemas y dispositivos. Incluye diseño de redes, administración de sistemas y protocolos de comunicación.</li>
+            <br><li><strong>Ingeniería de Sistemas Embebidos:</strong> Especialización en el diseño y desarrollo de sistemas computacionales integrados en dispositivos físicos. Incluye la programación de microcontroladores y el diseño de hardware.</li>
+            <br><li><strong>Computación en la Nube:</strong> Enfocado en el uso y gestión de servicios de computación a través de internet. Incluye el aprendizaje de plataformas de nube, arquitectura de servicios y administración de recursos virtuales.</li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

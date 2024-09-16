@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de la Ingeniería en Sistemas Computacionales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 1px auto;
+        }
+        h1, h2 {
+            color: #f0f0f0;
+        }
+        p {
+            line-height: 1.2;
+        }
+        
+        header h1 {
+            flex: 1;
+            text-align: center;
+            font-size: 30px;
+            color: #f1f1f1;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #f0f0f0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            height: 3px;
+            width: 25px;
+            background-color: white;
+            margin-bottom: 5px;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 988px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #000107;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                padding: 10px;
+                border-bottom: 1px solid #fff;
+            }
+
+            nav ul li a {
+                font-size: 18px;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+                justify-content: center; 
+                align-items: center;     
+                width: 100%;            
+                padding: 10px 0;         
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>        <h1>Ingeniería en Sistemas Computacionales</h1>
+        </center>
+        <nav><br>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contactos.html">Contáctanos</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li>
+                <li><a href="areas.html">Áreas de especialización</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Plan de Estudios</h2>
+        <p>El plan de estudios de la carrera de Ingeniería en Sistemas Computacionales está diseñado para proporcionar una formación integral en el campo de la tecnología y la informática. A continuación, se presenta una tabla con los principales cursos y materias que los estudiantes cursarán a lo largo de la carrera:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Semestre</th>
+                    <th>Curso</th>
+                    <th>Créditos</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1°</td>
+                    <td>Matemáticas Básicas</td>
+                    <td>6</td>
+                    <td>Introducción a conceptos matemáticos fundamentales aplicados en informática.</td>
+                </tr><br> 
+                <tr>
+                    <td>1°</td>
+                    <td>Programación I</td>
+                    <td>6</td>
+                    <td>Fundamentos de la programación y desarrollo de algoritmos.</td>
+                </tr><br> 
+                <tr>
+                    <td>2°</td>
+                    <td>Estructuras de Datos</td>
+                    <td>6</td>
+                    <td>Estudio de estructuras básicas y avanzadas para la organización de datos.</td>
+                </tr><br> 
+                <tr>
+                    <td>2°</td>
+                    <td>Sistemas Operativos</td>
+                    <td>6</td>
+                    <td>Principios y funcionamiento de sistemas operativos modernos.</td>
+                </tr>
+                <tr>
+                    <td>3°</td>
+                    <td>Algoritmos y Complejidad</td>
+                    <td>6</td>
+                    <td>Análisis de algoritmos y evaluación de su eficiencia.</td>
+                </tr>
+                <tr>
+                    <td>3°</td>
+                    <td>Redes de Computadoras</td>
+                    <td>6</td>
+                    <td>Fundamentos de redes, protocolos y arquitectura de redes de computadoras.</td>
+                </tr>
+                <tr>
+                    <td>4°</td>
+                    <td>Base de Datos</td>
+                    <td>6</td>
+                    <td>Diseño, implementación y gestión de bases de datos relacionales.</td>
+                </tr>
+                <tr>
+                    <td>4°</td>
+                    <td>Desarrollo de Software</td>
+                    <td>6</td>
+                    <td>Metodologías y prácticas para el desarrollo de software de calidad.</td>
+                </tr>
+                <tr>
+                    <td>5°</td>
+                    <td>Seguridad Informática</td>
+                    <td>6</td>
+                    <td>Protección de sistemas y datos contra amenazas y vulnerabilidades.</td>
+                </tr>
+                <tr>
+                    <td>5°</td>
+                    <td>Inteligencia Artificial</td>
+                    <td>6</td>
+                    <td>Conceptos y técnicas de inteligencia artificial y aprendizaje automático.</td>
+                </tr>
+                <tr>
+                    <td>6°</td>
+                    <td>Proyecto de Titulación</td>
+                    <td>12</td>
+                    <td>Desarrollo y presentación de un proyecto de investigación o aplicación práctica.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

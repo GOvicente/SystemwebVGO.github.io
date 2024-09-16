@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniería en Sistemas Computacionales</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+</head>
+<body>
+    <header>
+            <h1>Ing. En Sistemas Computacionales</h1>
+            <br>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="objetivos.html">Objetivos</a></li>
+                <li><a href="areas.html">Áreas de especialización</a></li>
+                <li><a href="plan.html">Plan de estudios</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+
+
+        <section>
+
+            <ul class="wrapper">
+            <li class="icono facebook">
+                <span class="tooltip">Facebook</span>
+                <a href="https://m.facebook.com/people/Vicente-Guerra-Orozco/100008071038525/?comment_id=Y29tbWVudDo2NDI5Mjk1MTQxNDczNzlfNTc3Mzg4MjgwNDI4NjI3" target="_blank">
+                <span><i class="fab fa-facebook-f"></i></span></a>
+            </li>
+    
+            <li class="icono twitter">
+                <span class="tooltip">Twitter</span>
+                <a href="https://www.twitch.tv/isavgo" target="_blank">
+                <span><i class="fab fa-twitter"></i></span></a>
+            </li>
+    
+            <li class="icono instagram">
+                <span class="tooltip">Instagram</span>
+                <a href="https://www.instagram.com/chetosgo/" target="_blank">
+                <span><i class="fab fa-instagram"></i></span></a>
+            </li>
+    
+            <li class="icono github">
+                <span class="tooltip">Github</span>
+                <a href="https://github.com/GOvicente" target="_blank">
+                   <span><i class="fab fa-github"></i></span></a> 
+            </li>
+    
+            <li class="icono youtube">
+                <span class="tooltip">Youtube</span>
+                <a href="https://www.youtube.com/channel/UCobLlGwYwh0gq7X8cRG4jrA" target="_blank">
+                <span><i class="fab fa-youtube"></i></span></a>
+            </li>
+    
+        </ul>
+        </section>
+    </main>
+
+   
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+    
+    <footer>
+        <p>Vicente Guerra Orozco</p>
+    </footer>
+</body>
+</html>
